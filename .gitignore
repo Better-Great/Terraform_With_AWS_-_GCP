@@ -35,3 +35,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+Terraform/.terraform/
+Deploying_Nginx_On_Terraform/.terraform/
