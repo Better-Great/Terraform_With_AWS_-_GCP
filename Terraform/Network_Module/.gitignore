@@ -3,3 +3,6 @@
 
 # Ignore files named .terraform.tfstate
 **/.terraform.tfstate
+
+#ignore ssh keys
+**/.levelup_key
