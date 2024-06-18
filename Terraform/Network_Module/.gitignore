@@ -1,0 +1,5 @@
+# Ignore directories named .terraform and their contents
+**/.terraform/
+
+# Ignore files named .terraform.tfstate
+**/.terraform.tfstate
