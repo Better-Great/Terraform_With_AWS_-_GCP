@@ -1,8 +1,3 @@
-variable "AWS_ACCESS_KEY" {
-    type        = string
-    default     = "AKIAQYWDICFJ4BQPLGWP"
-}
-
 variable "AWS_REGION" {
     type        = string
     default     = "us-east-2"
