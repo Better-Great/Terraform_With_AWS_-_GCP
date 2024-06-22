@@ -21,7 +21,7 @@ variable "TILT_RDS_PASSWORD" {
 
 variable "TILT_RDS_ALLOCATED_STORAGE" {
     type = string
-    default = "20"
+    default = "10"
 }
 
 variable "TILT_RDS_ENGINE" {
@@ -31,12 +31,12 @@ variable "TILT_RDS_ENGINE" {
 
 variable "TILT_RDS_ENGINE_VERSION" {
     type = string
-    default = "8.0.33"
+    default = "8.0.35"
 }
 
 variable "DB_INSTANCE_CLASS" {
     type = string
-    default = "db.t2.micro"
+    default = "db.t3.micro"
 }
 
 variable "RDS_CIDR" {
