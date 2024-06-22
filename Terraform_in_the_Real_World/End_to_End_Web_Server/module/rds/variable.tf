@@ -31,7 +31,7 @@ variable "TILT_RDS_ENGINE" {
 
 variable "TILT_RDS_ENGINE_VERSION" {
     type = string
-    default = "8.0.20"
+    default = "15.00.4249.2.cev-1"
 }
 
 variable "DB_INSTANCE_CLASS" {
