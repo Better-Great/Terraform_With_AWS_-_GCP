@@ -26,5 +26,5 @@ provider "aws" {
 
 output "load_balancer_output" {
   description = "Load Balancer"
-  value       = module.levelup-webserver.load_balancer_output
+  value       = module.tilt-webserver.load_balancer_output
 }

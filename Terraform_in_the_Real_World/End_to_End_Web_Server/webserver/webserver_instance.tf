@@ -91,10 +91,10 @@ resource "aws_autoscaling_group" "tilt_webserver" {
 
 #Application load balancer for app server
 resource "aws_lb" "tilt-load-balancer" {
-  name               = "${var.ENVIRONMENT}-levelup-lb"
+  name               = "${var.ENVIRONMENT}-tilt-lb"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = [aws_security_group.levelup_webservers_alb.id]
+  security_groups    = [aws_security_group.tilt_webservers_alb.id]
   subnets            = ["${var.vpc_public_subnet1}", "${var.vpc_public_subnet2}"]
 
 }
@@ -109,7 +109,7 @@ resource "aws_lb_target_group" "load-balancer-target-group" {
 
 # Adding HTTP listener
 resource "aws_lb_listener" "tiltserver_listner" {
-  load_balancer_arn = aws_lb.levelup-load-balancer.arn
+  load_balancer_arn = aws_lb.tilt-load-balancer.arn
   port              = "80"
   protocol          = "HTTP"
 
